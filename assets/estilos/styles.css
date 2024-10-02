@@ -1,8 +1,15 @@
 body {
     box-sizing: border-box;
     color: white;
-    background-color: rgb(176, 176, 176);
+    background: linear-gradient(rgb(1, 1, 100),
+    rgb(1, 1, 75),
+    rgb(0, 0, 50),
+    rgb(1, 1, 25),
+    rgb(1, 1, 0));
 
+}
+html {
+    height: 100%;
 }
 
 header {
@@ -11,8 +18,29 @@ header {
 
 header img {
     margin-top: 30px;
-    width: 200px;
+    width: 150px;
     border-radius: 50%;
-    border: solid 2px rgb(0, 252, 0);
+    border: solid 2px red;
     position: relative;
+}
+main {
+    text-align: center;
+}
+h2 {
+    background-color: red;
+    border-radius: 10px;
+    padding: 0.2rem;
+}
+main a{
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+footer {
+    text-align: center;
+}
+footer p {
+    font-size: small;
+    letter-spacing: 2px;
+    
 }
