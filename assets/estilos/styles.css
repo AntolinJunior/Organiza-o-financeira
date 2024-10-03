@@ -1,11 +1,11 @@
 body {
     box-sizing: border-box;
     color: white;
-    background: linear-gradient(rgb(1, 1, 100),
-    rgb(1, 1, 75),
-    rgb(0, 0, 50),
-    rgb(1, 1, 25),
-    rgb(1, 1, 0));
+    background: linear-gradient(rgb(60, 0, 100),
+    rgb(60, 0, 75),
+    rgb(60, 0, 50),
+    rgb(60, 0, 25),
+    rgb(60, 0, 0));
 
 }
 html {
@@ -29,7 +29,8 @@ main {
 h2 {
     background-color: red;
     border-radius: 10px;
-    padding: 0.2rem;
+    padding: 0.3rem;
+    margin: 40px;
 }
 main a{
     color: white;
@@ -42,5 +43,5 @@ footer {
 footer p {
     font-size: small;
     letter-spacing: 2px;
-    
+
 }
