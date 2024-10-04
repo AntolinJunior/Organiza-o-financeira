@@ -2,13 +2,19 @@
 <html lang="pt-br">
 
 <head>
+    <script src="https://kit.fontawesome.com/f962f4c5a7.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumo semana 30 Set. - 06 Out. de 2024</title>
     <style>
+        header i{
+            color: red;
+            
+        }
         table {
             margin-top: 20px;
         }
+
         tr {
             background-color: rgb(255, 255, 255);
         }
@@ -21,8 +27,9 @@
 
         #header-tr {
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
+
         #dia-semana {
             background-color: yellow;
             font-weight: bolder;
@@ -33,24 +40,46 @@
             font-weight: bolder;
 
         }
+
         #saida {
             background-color: red;
             font-weight: bolder;
         }
+
         #total-dia {
             background-color: yellow;
             font-weight: bolder;
         }
-        .resumo-semana {
+
+        .imagens-servico-passos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imagens-servico-passos img {
+            width: 90%;
+            box-shadow: 0px 0px 10px 1px;
+        }
+
+        .imagens-servico-residencial img {
+            width: 160px;
+            box-shadow: 0px 0px 10px 1px;
+        }
+
+        #dia-passos {
+            background-color: rgba(0, 0, 255, 0.075);
         }
     </style>
 </head>
 
-<body style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+<body
+    style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
     <header>
         <h1>Resumo semanal</h1>
         <p>30-Set.-06-Out.</p>
-        <a href="index.html">Voltar a página inicial</a>
+        <a href="index.html"><i style="letter-spacing: 3px;" class="fa-solid fa-house-circle-xmark"> Voltar</i></a>
     </header>
     <main>
         <table>
@@ -69,53 +98,92 @@
             </tr>
             <tr>
                 <td>Terça-feira</td>
-                <td>Passos</td>
+                <td id="dia-passos">dia ressarcido<strong>*</strong></td>
                 <td>R$15,00</td>
-                <td>Passos</td>
+                <td>-R$15,00</td>
             </tr>
             <tr>
                 <td>Quarta-feira</td>
+                <td>R$6,75</td>
+                <td>R$0,00</td>
+                <td>R$6,75</td>
             </tr>
             <tr>
                 <td>Quinta-feira</td>
+                <td>R$27,25</td>
+                <td>R$31,18</td>
+                <td>-R$3,93</td>
             </tr>
             <tr>
                 <td>
                     Sexta-feira
                 </td>
+                <td>não definido.</td>
+                <td>não definido.</td>
+                <td>não definido.</td>
             </tr>
             <tr>
                 <td>
                     Sábado
                 </td>
+                <td id="dia-passos">R$150,00</td>
+                <td>não definido.</td>
+                <td>não definido.</td>
             </tr>
             <tr>
                 <td>
                     Domingo
                 </td>
+                <td id="dia-passos">R$150,00</td>
+                <td>não definido.</td>
+                <td>não definido.</td>
             </tr>
         </table>
+        <table style="margin: 10px auto;">
+            <tr style="width: 90%;">
+                <td>
+                    Total de ganhos da semana <strong>R$34,52</strong>
+                </td>
+            </tr>
+        </table>
+        <p>*Ressarcimento do dia de Domingo <strong>22 de Setembro de 2024 </strong>na unidade Passos Mágicos Granjinha.
+            Acabou a tinta que estava na unidade.</p>
+
     </main>
     <section class="resumo-semana">
         <h2>Dia 30 de Setembro de 2024</h2>
-        <p>Dia de manutenção da moto já que estava com 1124km rodados e a primeira manutenção seria
-            com 1000km.</p>
-        <p>Arrumei alguns fios na residência de uma cliente que me ligou pedindo para resolver esse problema, cheguei às
-            12:40 hr e logo após ter visto o que queria fui até a casa de construção comprar os materiais. Passei em
-            casa peguei minhas ferramentas que faltavam e voltei e comecei a realizar o serviço até às 16:00 hr já que
-            tinha que buscar a moto que tinha deixado para fazer a revisão em Itapecerica da serra.</p>
-            <h2>Dia 01 de Outubro de 2024</h2>
-            <p>Sem atualizações.</p>
-            <h2>Dia 02 de Outubro de 2024</h2>
-            <p>Sem atualizações.</p>
-            <h2>Dia 03 de Outubro de 2024</h2>
-            <p>Sem atualizações.</p>
-            <h2>Dia 04 de Outubro de 2024</h2>
-            <p>Sem atualizações.</p>
-            <h2>Dia 05 de Outubro de 2024</h2>
-            <p>Sem atualizações.</p>
-            <h2>Dia 06 de Outubro de 2024</h2>
-            <p>Sem atualizações.</p>
+        <p>Dia de revisão da moto. Primeira revisão com 1000km.</p>
+        <p>Serviço de reparos residencial.</p>
+        <div class="imagens-servico-residencial">
+            <img src="assets/imagem/sevico-residencial-03.jpg" alt="Serviço residencial">
+            <img src="assets/imagem/sevico-residencial-06.jpg" alt="Serviço residencial">
+            <img src="assets/imagem/sevico-residencial-01.jpg" alt="Serviço residencial">
+            <img src="assets/imagem/sevico-residencial-02.jpg" alt="Serviço residencial">
+            <img src="assets/imagem/sevico-residencial-04.jpg" alt="Serviço residencial">
+            <img src="assets/imagem/sevico-residencial-05.jpg" alt="Serviço residencial">
+            <img src="assets/imagem/sevico-residencial-07.jpg" alt="Serviço residencial">
+            <img src="assets/imagem/sevico-residencial-08.jpg" alt="Serviço residencial">
+        </div>
+        <h2>Dia 01 de Outubro de 2024</h2>
+        <p>Feriado, dia de trabalho na Passos(<a href="https://www.passosmagicos.org.br">sobre a Passos Mágicos</a>)
+            realizações de pinturas na unidade do Cipó.</p>
+        <div class="imagens-servico-passos">
+        </div>
+        <h2>Dia 02 de Outubro de 2024</h2>
+        <p>Paguei o dinheiro da revisão da moto no total de R$200,00, revisei alguns extintores no orfanato, busquei meu
+            irmão em casa para levar no centro de Embu-Guaçu e fiz uma entrega às 20:04 hr.</p>
+        <h2>Dia 03 de Outubro de 2024</h2>
+        <p>Garoa de manhã até o anoitecer assim foi esse dia. Comecei a organizar o site pela manhã até que chegou a
+            hora de ver uma pessoa muito querida que havia falecido no dia 02 de Outubro de 2024 no velório do Colônia
+            na rua Sachio Nakao, 28-São Paulo-SP, 04892-170, mas antes passei no banco saquei um valor em dinheiro para o meu pai fazer a compra para a casa e fui no açougue comprar proteína (mistura) para almoçar. Cheguei 14:22 hr. dei minhas condolências aos familiares e
+            fiquei um pouco no local e, fui embora para a casa.</p>
+            <p>Liguei o aplicativo do Ifood entregador 15:00 hr. e até 21:10 hr. realizei 4 entregas.</p>
+        <h2>Dia 04 de Outubro de 2024</h2>
+        <p>Sem atualizações.</p>
+        <h2>Dia 05 de Outubro de 2024</h2>
+        <p>Sem atualizações.</p>
+        <h2>Dia 06 de Outubro de 2024</h2>
+        <p>Sem atualizações.</p>
 
     </section>
 
