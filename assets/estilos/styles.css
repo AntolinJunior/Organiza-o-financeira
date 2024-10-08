@@ -12,6 +12,8 @@ body {
 
 html {
     height: 100%;
+  
+
 }
 
 header {
@@ -25,6 +27,20 @@ header img {
     border: inset rgb(60, 0, 100) 3px;
     position: relative;
     box-shadow: 0px 0px 10px 1px white;
+
+    animation-name: animacao-img;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+
+}
+
+@keyframes animacao-img {
+    0% {
+        opacity: 0;
+
+    }
+
 
 }
 
@@ -40,7 +56,24 @@ h2 {
     letter-spacing: 1px;
     text-transform: uppercase;
     box-shadow: 0px 0px 8px 1px white;
+
+    animation-name: animacao-h2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+
 }
+
+@keyframes animacao-h2 {
+    0% {
+
+        opacity: 0;
+        color: transparent;
+
+    }
+
+}
+
 
 main a {
     color: white;
@@ -50,6 +83,19 @@ main a {
 
 footer {
     text-align: center;
+
+    animation-name: animacao-p;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+}
+
+@keyframes animacao-p {
+    0% {
+        scale: 1.6;
+        transform: translateY(100px);
+        opacity: 0;
+    }
 }
 
 footer p {
